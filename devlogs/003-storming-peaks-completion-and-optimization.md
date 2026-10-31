@@ -1,6 +1,5 @@
 # Storming Peaks Completion & Level Optimization
 
-**October 2026**
 
 ## Overview
 
