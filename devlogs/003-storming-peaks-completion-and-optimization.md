@@ -23,6 +23,10 @@ As the levels grew, projectile launchers were firing even when the player was fa
 
 I updated the C++ projectile spawner to use a configurable activation radius.
 
+
+https://github.com/user-attachments/assets/e24c6a6e-6852-4928-8580-79936fc3e6ca
+
+
 The system periodically checks the distance between the player and each spawner:
 
 - Entering the activation radius starts the projectile spawn timer.
@@ -33,13 +37,15 @@ The radius can be adjusted in the Details panel so launchers can support differe
 
 ## Optimizing Forested Lands
 
+<img width="1052" height="577" alt="image" src="https://github.com/user-attachments/assets/294ce896-3689-492d-8146-f97186049a89" />
+
 Forested Lands was experiencing noticeable frame drops during traversal, particularly when the player fell and more of the environment became visible.
 
 I cleaned up excess environmental content, removing approximately 2,500 trees, hundreds of thousands of grass instances, and around 30 redundant trigger boxes.
 
 The goal was to preserve the forest’s appearance while reducing unnecessary density. The remaining trees, fog, and lighting still maintain the forest atmosphere from the playable route.
 
-Following the cleanup and projectile changes, the frame drops I had previously encountered were no longer occurring during my playtests. Further testing across levels is still planned; I have not recorded a formal before-and-after performance benchmark yet.
+Following the cleanup and projectile changes, the frame drops I had previously encountered were no longer occurring during my playtests. Further testing across levels is still planned.
 
 ## Moving-Platform Fixes
 
