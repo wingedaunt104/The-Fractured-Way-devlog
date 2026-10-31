@@ -24,7 +24,7 @@ As the levels grew, projectile launchers were firing even when the player was fa
 I updated the C++ projectile spawner to use a configurable activation radius.
 
 
-https://github.com/user-attachments/assets/e24c6a6e-6852-4928-8580-79936fc3e6ca
+https://github.com/user-attachments/assets/c6b23369-0d28-44ea-8592-fbcd87c44b0e
 
 
 The system periodically checks the distance between the player and each spawner:
