@@ -1,53 +1,33 @@
 # The Path - Changelog
 
 This file tracks major development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
-## October 15, 2026
+## October 2026
 
 ### Added
-- Expanded the Storming Peaks parkour course with additional traversal sections, moving rock platforms, ruins, and environmental obstacles
-- Added additional blue flame and rock formations throughout the level to strengthen the atmosphere while also acting as visual guidance for the player
-- Added moving rock platform sequences designed to integrate with the existing parkour route
+
+- Completed the main Storming Peaks parkour course, including the final traversal sections and level completion trigger. Players can now play through and complete the level.
+- Added distance-based activation for projectile spawners so hazards only fire when the player is within their configured range.
+- Expanded Storming Peaks with moving rock platforms, ruins, environmental obstacles, and blue flame landmarks.
 
 ### Improved
-- Improved route readability by using blue fire landmarks to subtly guide players toward upcoming traversal sections
-- Improved environmental composition by integrating flame effects directly into rock formations and ruins rather than using them purely as decoration
-- Continued refining the overall pacing and layout of the Storming Peaks parkour course
-- Improved large Niagara fire visibility so major flame landmarks remain visible from wider camera angles and longer distances
-- Improved storm lighting and ground readability by adjusting cloud shadow behavior
+
+- Improved Storming Peaks route readability and environmental composition using blue flames, rock formations, and ruins to guide players.
+- Refined storm lighting, cloud shadows, and ground visibility.
+- Optimized Forested Lands by removing excess trees, grass instances, and redundant trigger boxes while preserving the forest’s appearance.
+- Reduced unnecessary projectile spawning across levels to improve gameplay performance.
 
 ### Fixed
-- Fixed moving rock and stone platforms failing to properly reset after player death
-- Fixed platforms continuing movement or restarting immediately after respawn
-- Fixed moving platforms becoming unusable after being reset
-- Improved platform reset logic so platforms return to their starting position and can be triggered again after respawning
+
+- Resolved the frame drops previously experienced while traversing and falling through Forested Lands during testing.
+- Fixed moving platforms failing to reset correctly after player death, allowing them to return to their starting positions and be triggered again.
+- Rain audio playing indoors
 
 ### In Progress
-- Completing the remaining Storming Peaks parkour course
-- Continuing movement and traversal polish before the demo
-- Further environment detailing and visual guidance
-- Additional performance testing and optimization
-## October 9, 2026
 
-### Added
-- Completed a major portion of the Storming Peaks parkour course
-- Expanded the main traversal route with additional ruins, floating rock formations, elevated platforms, and interconnected parkour sections
-- Added additional blue flame landmarks throughout the environment to help guide traversal
-
-### Improved
-- Improved the overall layout and environmental composition of Storming Peaks
-- Improved visual guidance using blue flames, ruins, and large rock formations
-- Improved the scale and atmosphere of the level with larger architectural structures and layered traversal areas
-- Continued performance testing using Standalone Game for more accurate gameplay performance
-
-### Fixed
-- Fixed major Niagara fire visibility and camera-angle culling issues
-- Increased Niagara fixed bounds for large blue flame effects so they remain visible from greater distances and wider viewing angles
-- Improved consistency of large environmental fire effects throughout the level
-
-### In Progress
-- Completing the remaining Storming Peaks parkour course
-- Further environment and traversal polish
-- Additional performance optimization and testing
+- Finishing rain impact effects on the player and ground splash effects.
+- Fix rain going through some structures
+- Fix any performance issues between the levels.
+- Thinking about how to execute an animation overhaul
 
 ## September 2026
 
