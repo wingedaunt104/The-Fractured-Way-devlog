@@ -3,32 +3,15 @@
 This file tracks major development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
 ## October 2026
 
-### Added
+- **Storming Peaks Completion:** Completed the main parkour course, including the final traversal sections and level completion trigger. Players can now play through and complete Storming Peaks. Expanded the route with moving rock platforms, ruins, environmental obstacles, and blue flame landmarks.
 
-- Completed the main Storming Peaks parkour course, including the final traversal sections and level completion trigger. Players can now play through and complete the level.
-- Added distance-based activation for projectile spawners so hazards only fire when the player is within their configured range.
-- Expanded Storming Peaks with moving rock platforms, ruins, environmental obstacles, and blue flame landmarks.
+- **Environment & Visual Guidance:** Improved route readability and environmental composition using blue flames, rock formations, and ruins to guide players through the level. Refined storm lighting, cloud shadows, and ground visibility.
 
-### Improved
+- **Projectile & Level Optimization:** Added distance-based activation for projectile spawners so hazards only fire when the player is within their configured range. Optimized Forested Lands by removing excess trees, grass instances, and redundant trigger boxes while preserving its appearance. Resolved the frame drops previously experienced during traversal and falling in testing.
 
-- Improved Storming Peaks route readability and environmental composition using blue flames, rock formations, and ruins to guide players.
-- Refined storm lighting, cloud shadows, and ground visibility.
-- Optimized Forested Lands by removing excess trees, grass instances, and redundant trigger boxes while preserving the forest’s appearance.
-- Reduced unnecessary projectile spawning across levels to improve gameplay performance.
+- **Fixes & Audio:** Fixed moving platforms failing to reset correctly after player death, allowing them to return to their starting positions and be triggered again. Corrected outdoor rain audio playing indoors and added separate indoor rain ambience.
 
-### Fixed
-
-- Resolved the frame drops previously experienced while traversing and falling through Forested Lands during testing.
-- Fixed moving platforms failing to reset correctly after player death, allowing them to return to their starting positions and be triggered again.
-- Rain audio playing indoors
-
-### In Progress
-
-- Finishing rain impact effects on the player and ground splash effects.
-- Fix rain going through some structures
-- Fix any performance issues between the levels.
-- Thinking about how to execute an animation overhaul
-
+- **In Progress & Planned Improvements:** Continuing work on rain impacts on the player, ground splash effects, and preventing rain from passing through structures. Testing performance across levels and planning an animation overhaul to improve movement presentation and transitions.
 ## September 2026
 
 - **Storming Peaks Environment:** Began and substantially developed the Storming Peaks parkour level with volumetric storm clouds, atmospheric lighting, lower cloud layers, floating rock formations, ruins, blue environmental flames, modular wall-running surfaces, and an expanded traversal route. Improved fog, lighting, cloud density, environmental composition, level readability, and the Blender-to-Unreal asset workflow.
