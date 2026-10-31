@@ -1,6 +1,6 @@
 # The Path - Changelog
 
-This file tracks major development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
+This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
 ## October 2026
 
 - **Storming Peaks Completion:** Completed the main parkour course, including the final traversal sections and level completion trigger. Players can now play through and complete Storming Peaks. Expanded the route with moving rock platforms, ruins, environmental obstacles, and blue flame landmarks.
