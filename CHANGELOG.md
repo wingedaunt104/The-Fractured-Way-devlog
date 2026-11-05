@@ -21,7 +21,6 @@ This file tracks development milestones, gameplay systems, improvements, and fix
 - Further optimize Forested Lands toward a consistent 60 FPS.
 - Complete full-level performance testing across Storming Peaks and Forested Lands.
 - Verify stability and functionality of existing gameplay systems following the engine migration.
-- Continue optimizing remaining levels in preparation for release.
 ## October 2026
 
 - **Storming Peaks Completion:** Completed the main parkour course, including the final traversal sections and level completion trigger. Players can now play through and complete Storming Peaks. Expanded the route with moving rock platforms, ruins, environmental obstacles, and blue flame landmarks.
