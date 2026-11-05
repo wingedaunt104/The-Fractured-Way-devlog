@@ -1,6 +1,27 @@
 # The Path - Changelog
 
 This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
+## November 5, 2026
+
+### Added / Updated
+- **Engine Upgrade:** Migrated *The Path* from Unreal Engine 5.4 to Unreal Engine 5.8 to continue development on a newer engine version.
+
+### Improved
+- **Storming Peaks Performance:** Significantly optimized the level, reducing frame times from approximately 30 ms to 14–17 ms in tested areas, bringing performance close to a consistent 60 FPS.
+- **Environmental Optimization:** Removed unnecessary fire effects, flame-based moving objects, and other performance-heavy environmental elements to reduce rendering overhead.
+- **Rendering Efficiency:** Reduced draw calls and improved CPU rendering performance while preserving the level's stormy atmosphere.
+- **General Level Optimization:** Continued optimizing environmental assets and effects across multiple levels to improve frame rates and gameplay responsiveness.
+
+### In Progress
+- **Forested Lands Optimization:** Began targeting 60 FPS, with current frame times ranging between approximately 17–22 ms (45–59 FPS).
+- **Performance Testing:** Continuing to evaluate rendering performance and frame-time consistency across different environments.
+- **Engine Compatibility Testing:** Verifying gameplay systems, materials, Niagara effects, and Blueprints following the upgrade to Unreal Engine 5.8.
+
+### Next Steps
+- Further optimize Forested Lands toward a consistent 60 FPS.
+- Complete full-level performance testing across Storming Peaks and Forested Lands.
+- Verify stability and functionality of existing gameplay systems following the engine migration.
+- Continue optimizing remaining levels in preparation for release.
 ## October 2026
 
 - **Storming Peaks Completion:** Completed the main parkour course, including the final traversal sections and level completion trigger. Players can now play through and complete Storming Peaks. Expanded the route with moving rock platforms, ruins, environmental obstacles, and blue flame landmarks.
