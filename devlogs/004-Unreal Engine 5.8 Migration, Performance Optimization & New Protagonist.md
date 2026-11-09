@@ -105,4 +105,5 @@ Completed or implemented:
 - Continue improving gameplay stability and preparing the game for future testing
 - Plan the next levels
 - Overhaul animations
+- Make projectiles and hazards have on-screen effects when launching or hitting other objects.
 
