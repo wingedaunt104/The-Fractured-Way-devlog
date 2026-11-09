@@ -16,8 +16,6 @@ This required moving the project into the updated environment and continuing to 
 
 The migration also provided an opportunity to revisit performance issues that had become increasingly noticeable as the game's environments expanded.
 
-**[IMAGE 1: Screenshot of The Path running inside Unreal Engine 5.8]**
-
 ## Game-Wide Performance Optimization
 
 One of my main priorities was reducing rendering overhead and improving frame-time consistency throughout the game.
