@@ -1,8 +1,8 @@
 # The Path - Changelog
 
 This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
-**November 7, 2026**
 
+**November 7, 2026**
 ### Added
 - **Custom Protagonist:** Created and integrated a realistic main character featuring dreadlocks, a hoodie, cargo pants, and casual footwear.
 - **Character Rigging & Physics:** Successfully implemented working animations, skeletal rigging, and physics for the new character.
