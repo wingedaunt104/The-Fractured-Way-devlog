@@ -102,7 +102,6 @@ Completed or implemented:
 ## Next Steps
 
 - Continue testing performance throughout every level, especially during active gameplay and environmental hazards.
-- Polish the protagonist's movement animations and transitions.
 - Continue improving gameplay stability and preparing the game for future testing
 - Plan the next levels
 - Overhaul animations
