@@ -36,8 +36,9 @@ Profiling revealed that the CPU rendering thread was a major bottleneck. Some of
 
 I reduced expensive environmental elements while preserving important visual landmarks and the level's dark, stormy atmosphere.
 
-Following these changes, tested sections of Storming Peaks began running at approximately 14–17 milliseconds per frame, approaching or exceeding the 60 FPS target.
+Following these changes, tested sections of Storming Peaks began running at approximately 14–17 milliseconds per frame, approaching or exceeding the 60 FPS target as seen in the image below.
 
+<img width="1278" height="714" alt="Screenshot 2026-11-08 205150" src="https://github.com/user-attachments/assets/d2a12dc3-4963-4bd9-a5de-31c065b0696b" />
 
 
 ### Optimizing Forested Lands
@@ -52,9 +53,7 @@ The goal was to preserve the forest's atmosphere without maintaining excessive r
 
 Earlier tests showed frame times of approximately 17–22 milliseconds. Following further optimization, tested areas began reaching approximately 12–16 milliseconds, bringing performance much closer to a consistent 60 FPS.
 
-**[IMAGE 3: Updated Forested Lands screenshot showing the preserved environment]**
-
-**[CLIP 2: Forested Lands gameplay showing movement through the optimized environment and current frame times]**
+<img width="1280" height="719" alt="Screenshot 2026-11-08 205858" src="https://github.com/user-attachments/assets/24ba16b0-de90-40ab-8293-af0193259b60" />
 
 ## Introducing the New Main Character
 
@@ -68,7 +67,7 @@ I wanted the main character's appearance to reinforce the idea that he is an ord
 
 The new model features a realistic human appearance, long dreadlocks, a dark hoodie, cargo pants, and casual footwear.
 
-**[IMAGE 4: Close-up screenshot of the completed protagonist model in Blender]**
+<img width="679" height="545" alt="Screenshot 2026-11-08 201721" src="https://github.com/user-attachments/assets/b51737e8-9738-4a1d-93d0-1f3e22525c86" />
 
 ### Character Rigging, Animation & Physics
 
@@ -78,7 +77,10 @@ The new protagonist now supports working skeletal animations and physics, allowi
 
 This is an important step toward giving *The Path* its own recognizable character and visual identity.
 
-**[CLIP 3: New protagonist demonstrating running, jumping, wall-running, sliding, and physics behavior]**
+
+https://github.com/user-attachments/assets/9d62d284-9248-4671-89ce-c20fecc323d7
+
+
 
 ### Future Character Customization
 
@@ -103,11 +105,7 @@ Completed or implemented:
 
 - Continue testing performance throughout every level, especially during active gameplay and environmental hazards.
 - Polish the protagonist's movement animations and transitions.
-- Refine character materials, appearance, and presentation.
-- Begin developing additional unlockable character skins.
-- Continue improving gameplay stability and preparing the game for future testing and release.
+- Continue improving gameplay stability and preparing the game for future testing
+- Plan the next levels
+- Overhaul animations
 
-
-
-<img width="679" height="545" alt="Screenshot 2026-11-08 201721" src="https://github.com/user-attachments/assets/b51737e8-9738-4a1d-93d0-1f3e22525c86" />
-<img width="1278" height="714" alt="Screenshot 2026-11-08 205150" src="https://github.com/user-attachments/assets/d2a12dc3-4963-4bd9-a5de-31c065b0696b" />
