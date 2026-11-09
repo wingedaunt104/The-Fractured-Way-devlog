@@ -1,6 +1,23 @@
 # The Path - Changelog
 
 This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
+**November 7, 2026**
+
+### Added
+- **Custom Protagonist:** Created and integrated a realistic main character featuring dreadlocks, a hoodie, cargo pants, and casual footwear.
+- **Character Rigging & Physics:** Successfully implemented working animations, skeletal rigging, and physics for the new character.
+
+### Improved
+- **Game-Wide Performance:** Completed a major optimization pass across the game's levels, reducing rendering overhead and improving overall frame rates and gameplay responsiveness.
+- **Storming Peaks Optimization:** Reduced unnecessary particle effects and performance-heavy moving objects, bringing frame times to approximately 14–16 ms in tested areas.
+- **Forested Lands Optimization:** Optimized foliage density and environmental assets, achieving approximately 12–16 ms frame times in tested areas.
+- **Rendering Efficiency:** Reduced unnecessary actors, draw calls, and environmental complexity while preserving each level's atmosphere.
+
+### In Progress
+- Further polishing character animations and movement transitions.
+- Planning next levels.
+- Continuing performance and stability testing across all levels.
+  
 ## November 5, 2026
 
 ### Added / Updated
