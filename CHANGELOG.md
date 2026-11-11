@@ -1,7 +1,38 @@
 # The Path - Changelog
 
 This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
+## November 10, 2026
 
+### Added
+
+- **Chaos Projectile Destruction:** Implemented a physics-based destruction system using Unreal Engine's Chaos Geometry Collections, allowing rock projectiles to fracture into individual pieces upon impact.
+- **Explosive Fragment Physics:** Integrated a custom Chaos Master Field that applies radial and angular velocity to shattered projectiles, launching fragments outward with explosive force and realistic tumbling.
+- **Reusable Destruction Framework:** Developed a C++ and Blueprint interface system that spawns destructible Geometry Collections when projectiles collide with environmental objects, supporting future projectile variations.
+- **Debris Lifetime Management:** Added automatic cleanup for shattered projectile fragments, removing debris after a short lifespan to prevent unnecessary physics simulation.
+
+### Improved
+
+- **Projectile Collision Detection:** Refined collision handling using a dedicated collision sphere, improving projectile interactions with walls, terrain, and other physical objects.
+- **Projectile Spawning Reliability:** Resolved issues involving projectiles colliding with their own launchers or other projectiles, preventing premature destruction.
+- **Impact Responsiveness:** Improved the transition between projectile collision and Chaos destruction, allowing rocks to fracture and scatter at the point of impact rather than relying on subsequent environmental collisions.
+- **Destruction Visuals:** Adjusted fracture strain, radial velocity, and angular physics settings to produce more impactful rock explosions.
+- **C++ and Blueprint Integration:** Improved communication between projectile impact events and destruction Blueprints, resolving issues where the destruction interface failed to execute.
+
+### Fixed
+
+- Fixed projectiles passing through walls due to incorrect collision settings.
+- Fixed projectile meshes appearing offset from their collision components.
+- Fixed projectiles disappearing immediately after spawning due to unintended collisions.
+- Fixed Chaos destruction events failing to trigger through the Blueprint interface.
+- Corrected C++ projectile spawner implementation and restored distance-based spawning functionality.
+
+### In Progress
+
+- Refining Chaos destruction consistency across different collision surfaces and environmental objects.
+- Planning explosion damage radius and physics-based ragdoll knockback for nearby players.
+- Adding Niagara dust, debris particles, and impact audio to enhance destruction effects.
+- Continuing performance testing to ensure Chaos physics remains efficient during repeated projectile impacts.
+  
 ## November 7, 2026
 ### Added
 - **Custom Protagonist:** Created and integrated a realistic main character featuring dreadlocks, a hoodie, cargo pants, and casual footwear.
