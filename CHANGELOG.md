@@ -1,6 +1,6 @@
-# The Path - Changelog
+# The Fractured Way - Changelog
 
-This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Path.
+This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Fractured Way.
 ## November 10, 2026
 
 ### Added
@@ -52,7 +52,7 @@ This file tracks development milestones, gameplay systems, improvements, and fix
 ## November 5, 2026
 
 ### Added / Updated
-- **Engine Upgrade:** Migrated *The Path* from Unreal Engine 5.4 to Unreal Engine 5.8 to continue development on a newer engine version.
+- **Engine Upgrade:** Migrated *The Fractured Way* from Unreal Engine 5.4 to Unreal Engine 5.8 to continue development on a newer engine version.
 
 ### Improved
 - **Storming Peaks Performance:** Significantly optimized the level, reducing frame times from approximately 30 ms to 14–17 ms in tested areas, bringing performance close to a consistent 60 FPS.
