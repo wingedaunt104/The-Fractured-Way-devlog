@@ -75,5 +75,3 @@ The Fractured Way is an independently developed project planned for commercial r
 ## Copyright
 
 Copyright © 2026 Gavin Hill. All rights reserved.
-
-The Path is proprietary software. This repository documents development progress and does not grant permission to redistribute or reuse game assets or source material.
