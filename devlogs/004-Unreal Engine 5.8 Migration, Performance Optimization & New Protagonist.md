@@ -2,7 +2,7 @@
 
 ## Overview
 
-Over the past few weeks, development on *The Path* has shifted toward improving performance, updating the game's technical foundation, and establishing a more distinct identity for its main character.
+Over the past few weeks, development on *The Fractured Way* has shifted toward improving performance, updating the game's technical foundation, and establishing a more distinct identity for its main character.
 
 The project has been migrated from Unreal Engine 5.4 to Unreal Engine 5.8. I also completed a major optimization pass across the game's levels, with particularly noticeable improvements in Storming Peaks and Forested Lands.
 
@@ -10,7 +10,7 @@ One of the biggest additions is a new custom protagonist model, replacing the ge
 
 ## Migrating to Unreal Engine 5.8
 
-I migrated *The Path* from Unreal Engine 5.4 to 5.8 to continue development using a newer engine version.
+I migrated *The Fractured Way* from Unreal Engine 5.4 to 5.8 to continue development using a newer engine version.
 
 This required moving the project into the updated environment and continuing to evaluate existing gameplay systems, assets, materials, and rendering behavior.
 
@@ -55,7 +55,7 @@ Earlier tests showed frame times of approximately 17–22 milliseconds. Followin
 
 ## Introducing the New Main Character
 
-Another major development milestone was the creation of a custom protagonist for *The Path*.
+Another major development milestone was the creation of a custom protagonist for *The Fractured Way*.
 
 The game's story follows an ordinary person who is unexpectedly pulled into a strange dimension and must escape by navigating increasingly dangerous environments through parkour.
 
@@ -73,7 +73,7 @@ Following the model's creation, I worked on making the character functional with
 
 The new protagonist now supports working skeletal animations and physics, allowing the character to participate in the parkour gameplay rather than remaining a static model.
 
-This is an important step toward giving *The Path* its own recognizable character and visual identity.
+This is an important step toward giving *The Fractured Way* its own recognizable character and visual identity.
 
 
 https://github.com/user-attachments/assets/9d62d284-9248-4671-89ce-c20fecc323d7
