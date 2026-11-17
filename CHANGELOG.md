@@ -1,6 +1,42 @@
 # The Fractured Way - Changelog
 
 This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Fractured Way.
+## November 17, 2026
+
+### Added
+
+- **Custom Protagonist Overhaul:** Integrated an upgraded protagonist model featuring improved facial anatomy, realistic skin textures, refined clothing geometry, detailed hands, and enhanced facial features.
+- **Physics-Based Dreadlocks:** Implemented a separate skeletal hair system with 30 simulated hair bones, individual physics bodies, and configurable constraints, allowing dreadlocks to react dynamically to player movement.
+- **Advanced Hair Materials:** Introduced redesigned dreadlocks featuring improved strand geometry, realistic surface textures, natural thickness variation, frizz, and detailed hairline elements.
+- **Hair Animation Blueprint:** Developed a dedicated Animation Blueprint using Copy Pose From Mesh and RigidBody simulation, allowing the dreadlocks to follow the character's animations while maintaining independent physics.
+- **Character Reveal Renders:** Created multiple cinematic character poses and renders for the game's upcoming official social media reveal.
+
+### Improved
+
+- **Hair Physics Responsiveness:** Adjusted angular damping, spring strength, constraint limits, and velocity response to produce more natural hair movement during running, jumping, falling, and landing.
+- **Dreadlock Settling Behavior:** Refined the hair's return-to-rest motion by adjusting base constraint stiffness and damping, reducing slow or unnatural movement while preserving flexibility in the individual strands.
+- **Character Appearance:** Improved shoulder positioning, neck proportions, facial likeness, eye materials, facial hair, hoodie geometry, and clothing textures.
+- **Character Movement Rotation:** Updated player rotation settings so the camera can rotate independently while the character remains stationary, without requiring turn-in-place animations.
+- **Character Animation Integration:** Maintained compatibility between the upgraded skeletal meshes and existing locomotion and parkour animation systems.
+- **Character Presentation:** Refined cinematic lighting, posing, hand anatomy, camera framing, and render quality for promotional character screenshots.
+
+### Fixed
+
+- Fixed the character rotating unnecessarily when moving the camera while standing still.
+- Fixed the longstanding checkpoint respawn orientation issue that caused the character to consistently face the wrong direction after respawning.
+- Corrected unnatural dreadlock movement caused by incorrect physics settings on supporting skeleton bodies.
+- Fixed excessively stiff hair movement by refining physics damping and constraint spring settings.
+- Resolved initial animation compatibility issues encountered while testing upgraded character meshes in duplicated Blueprints.
+- Corrected visual issues in character renders, including awkward arm positioning, unnatural finger poses, and excessive rendering noise.
+
+### In Progress
+
+- **Projectile Explosion Polish:** Continuing development of the Chaos-based projectile destruction system, including more consistent impacts, fragment scattering, and explosive visual effects.
+- **Explosion Effects:** Planning improved dust clouds, debris particles, impact audio, radial player damage, and camera shake.
+- **Hair Performance Optimization:** Evaluating the performance impact of the redesigned high-detail dreadlocks.
+- **Level Progression:** Planning a revised eight-level structure with a more deliberate difficulty curve and stronger integration of the game's narrative.
+- **Social Media Reveal:** Preparing the first official character reveal for The Fractured Way.
+
 ## November 10, 2026
 
 ### Added
