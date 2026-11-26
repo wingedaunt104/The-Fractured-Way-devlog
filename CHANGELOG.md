@@ -1,6 +1,44 @@
 # The Fractured Way - Changelog
 
 This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Fractured Way.
+## November 26, 2026
+
+### Added
+
+- **Custom Rock Impact VFX:** Developed a new dust explosion effect for rock projectiles using Blender-generated visual assets and Unreal Engine 5 Niagara.
+- **Six-Way Dust Lighting Material:** Created `MM_RockDust`, a custom translucent material supporting six-direction lighting, normal reconstruction, sunlight response, and configurable dust coloration.
+- **Dynamic Sunlight and Backscatter:** Implemented directional sunlight calculations and adjustable backscatter controls to give dust a more natural appearance across different lighting conditions.
+- **Animated Dust Flipbooks:** Imported and configured 11 custom dust textures, including packed six-way lighting maps and motion-vector textures, using BC7 compression.
+- **Niagara Rock Impact Prototype:** Created `NS_RockImpact_Dust_Test`, featuring instantaneous particle spawning, outward velocity, randomized lifetimes, variable sprite sizes, and animated dust clouds.
+- **Custom VFX Organization:** Established a dedicated rock-impact asset structure for textures, materials, and Niagara effects to support future projectile variations.
+
+### Improved
+
+- **Rock Fragment Scaling:** Reduced the size of Chaos Geometry Collection fragments to better match the projectile's proportions and prevent overly large debris from dominating impacts.
+- **Explosion Force:** Adjusted radial explosion velocity to produce more controlled fragment scattering while preserving the force of the initial impact.
+- **Dust Explosion Presentation:** Refined the dust effect into a shorter, more compact burst that better complements the game's visual style and fast-paced parkour gameplay.
+- **Particle Movement:** Adjusted Niagara particle velocity and distribution to produce a more cohesive dust cloud rather than widely separated particles.
+- **Dust Transparency:** Improved particle opacity and depth fading to soften visible intersections and reduce harsh edges.
+- **Projectile VFX Direction:** Established a reusable approach for future destruction effects, including flaming rocks, golden projectiles, environmental hazards, and organic projectiles.
+
+### Fixed
+
+- Corrected excessive Chaos fragment rotation by disabling unwanted torque behavior.
+- Reduced unnatural fragment movement and excessive launching through adjustments to explosion forces.
+- Fixed incorrect Niagara flipbook sampling caused by configuring an 8×8 texture atlas as a 4×4 grid.
+- Fixed dust particles displaying entire texture sheets instead of individual animation frames.
+- Corrected inverted dust sprites caused by unwanted particle rotation.
+- Improved the appearance of hard, cut-off edges around dust particles.
+- Corrected Niagara SubUV texture sampling and synchronized the two packed lighting textures used by the dust material.
+
+### In Progress
+
+- **Rock Impact VFX Refinement:** Configuring sprite expansion and lifetime-based scaling to make the dust burst grow and dissipate more naturally.
+- **Niagara System Completion:** Preparing additional dust layers, shockwave particles, and fine debris effects using the generated VFX assets.
+- **Projectile Destruction Integration:** Planning to connect the Niagara explosion to `BP_ProjectileDestruction` while preserving the existing C++ collision and Chaos destruction systems.
+- **Chaos Physics Polish:** Investigating occasional fragment drifting and physics instability during destruction.
+- **Projectile VFX Variations:** Planning additional effects for different projectile types, including fire, metallic impacts, and organic hazards.
+- **VFX Performance Testing:** Preparing to evaluate particle performance, transparency overdraw, and simultaneous projectile impacts in gameplay.
 ## November 17, 2026
 
 ### Added
