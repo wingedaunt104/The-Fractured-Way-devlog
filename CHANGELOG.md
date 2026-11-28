@@ -1,6 +1,65 @@
 # The Fractured Way - Changelog
 
 This file tracks development milestones, gameplay systems, improvements, and fixes made during the development of The Fractured Way.
+## November 28, 2026
+
+### Added
+
+- **Complete Multi-Layer Rock Explosion VFX:** Expanded the original Niagara dust prototype into a comprehensive explosion effect combining multiple dust bursts, a radial shockwave, and smaller drifting dust particles.
+- **Secondary Dust Burst:** Implemented `Dust_Burst_B`, introducing an additional animated dust layer to increase explosion volume and improve visual density.
+- **Animated Shockwave Effect:** Developed a rapidly expanding shockwave using custom 4×4 flipbook textures, six-way lighting, and lifetime-based particle scaling.
+- **Residual Dust Particles:** Added smaller dust puffs that expand and dissipate independently of the primary explosion, providing additional visual depth.
+- **Additional VFX Materials:** Created specialized materials for secondary dust, shockwave, and smaller dust effects using the existing six-way lighting framework.
+- **Projectile Explosion Integration:** Integrated the Niagara explosion system into `BP_ProjectileDestruction`, triggering the visual effects at the projectile's impact location alongside Chaos destruction.
+- **Radial Player Knockback:** Implemented a sphere-overlap detection system that identifies players near the explosion and launches them away from the impact point without causing death.
+- **Directional Knockback Calculation:** Added vector-based launch calculations using player position, explosion location, normalized direction, and upward velocity to produce more convincing explosive force.
+- **Direct-Hit Death Impulse:** Added directional impulse calculations that allow projectile impacts to propel the player's ragdoll backward upon death.
+
+### Improved
+
+- **Explosion Visual Quality:** Refined particle sizes, outward velocities, expansion curves, and opacity fading to produce a larger, faster, more forceful rock explosion.
+- **Dust Layering:** Combined primary and secondary dust bursts with smaller particles to create a more cohesive explosion rather than a single uniform dust cloud.
+- **Shockwave Presentation:** Adjusted shockwave orientation, expansion, and fading to produce a more visible radial effect near the impact surface.
+- **Ragdoll Knockback:** Improved the consistency of direct-hit death reactions through normalized impact-direction calculations and stronger physics impulses.
+- **Projectile Gameplay Feedback:** Established distinct gameplay responses for direct projectile collisions and nearby explosions.
+- **Projectile Scaling:** Further reduced the rock Geometry Collection scale to improve projectile proportions and visual consistency.
+- **Niagara Particle Behavior:** Tuned particle lifetime, sprite scaling, velocity, and rotation independently across multiple explosion emitters.
+- **Explosion Timing:** Coordinated the shockwave and dust layers to create a more pronounced initial impact followed by gradually dissipating dust.
+
+### Fixed
+
+- Fixed inconsistent direct-hit ragdoll reactions that sometimes caused the player to collapse without being propelled backward.
+- Resolved the issue allowing the player to mantle onto explosive rock projectiles.
+- Corrected shockwave visibility problems caused by sprite orientation and facing-vector configuration.
+- Fixed the missing Sprite Renderer reference in Niagara's SubUV Animation module.
+- Corrected shockwave animation configuration to use the full 4×4 texture atlas.
+- Fixed secondary dust texture configuration to support its 8×8 flipbook animation.
+- Prevented explosion-radius knockback from interfering with the existing direct-contact death behavior.
+- Improved projectile collision and visual scaling consistency.
+
+### Completed
+
+- **Rock Explosion VFX:** Completed the primary dust burst, secondary dust burst, expanding shockwave, and drifting dust particles.
+- **Direct-Hit Death:** Confirmed that direct projectile collisions trigger the player's death system.
+- **Explosion-Radius Knockback:** Implemented and tested nonlethal knockback for players caught near the explosion.
+- **Ragdoll Impact Response:** Improved and confirmed directional knockback on direct projectile contact.
+- **Projectile Mantling Fix:** Resolved the unwanted interaction allowing the player to mantle onto explosive projectiles.
+- **Niagara Integration:** Connected the explosion effects to the existing Chaos destruction Blueprint.
+
+### In Progress
+
+- **Distance-Based Camera Shake:** Preparing camera reactions that scale according to the player's proximity to the explosion.
+- **Explosion Audio:** Planning realistic rock-impact and explosion sounds with distance attenuation and sound variation.
+- **Projectile Performance Testing:** Preparing stress tests involving simultaneous explosions, particle overdraw, and Chaos fragment simulation.
+- **Debris Cleanup:** Continuing verification of fragment lifetimes and cleanup behavior after destruction.
+- **Projectile Variants:** Planning additional projectile effects and gameplay behavior for future environments.
+
+### Next Development Milestone
+
+Implement distance-based camera shake and explosion audio for normal rock projectiles, followed by final gameplay and performance testing.
+
+**Development Status:** The normal rock projectile's destruction VFX, direct-hit death behavior, explosion-radius knockback, and ragdoll reactions are functional. Camera shake, audio, and final validation remain before the complete rock projectile system is considered finished.
+
 ## November 26, 2026
 
 ### Added
